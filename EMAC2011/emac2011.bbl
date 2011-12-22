@@ -1,67 +1,21 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{Givon04}
-D.~Givon, R.~Kupferman, and A.~Stuart.
+Dror Givon, Raz Kupferman, and Andrew Stuart.
 \newblock Extracting macroscopic dynamics: model problems and algorithms.
-\newblock {\em Nonlinearity}, 17(6):R55, 2004.
-\newblock http://dx.doi.org/10.1088/0951-7715/17/6/R01.
+\newblock {\em Nonlinearity}, 17:R55--R127, 2004.
+\newblock \url{http://stacks.iop.org/no/17/R55}.
 
-\bibitem{Hyman05}
-J.~M. Hyman.
-\newblock Patch dynamics for multiscale problems.
-\newblock {\em Comput. Sci. Eng.}, 7(3):47--53, 2005.
-\newblock http://link.aip.org/link/?CSX/7/47/1.
+\bibitem{Moller2005}
+J.~Moller, O.~Runborg, P.~G. Kevrekidis, K.~Lust, and I.~G. Kevrekidis.
+\newblock Equation-free, effective computation for discrete systems: a time
+  stepper based approach.
+\newblock {\em International Journal of Bifurcation and Chaos}, 15(3):975--996,
+  2005.
 
-\bibitem{Kevrekidis09}
-I.~G. Kevrekidis and G.~Samaey.
-\newblock Equation-free multiscale computation: Algorithms and applications.
-\newblock {\em Annu. Rev. Phys. Chem.}, 60(1):321--344, 2009.
-\newblock http://dx.doi.org/10.1146/annurev.physchem.59.032607.093610.
-
-\bibitem{Knapek98}
-S.~Knapek.
-\newblock Matrix-dependent multigrid homogenization for diffusion problems.
-\newblock {\em SIAM J. Sci. Comput.}, 20(2):515--533, 1998.
-\newblock http://dx.doi.org/10.1137/S1064827596304848.
-
-\bibitem{Roberts01}
-A.~J. Roberts.
-\newblock Holistic discretization ensures fidelity to {B}urgers' equation.
-\newblock {\em Appl. Numer. Math.}, 37(3):371 -- 396, 2001.
-\newblock http://dx.doi.org/10.1016/S0168-9274(00)00053-2.
-
-\bibitem{Roberts03}
-A.~J. Roberts.
-\newblock A holistic finite difference approach models linear dynamics
-  consistently.
-\newblock {\em Math. Comput.}, 72:247--262, 2003.
-\newblock http://dx.doi.org/10.1090/S0025-5718-02-01448-5.
-
-\bibitem{Roberts07}
-A.~J. Roberts and I.~G. Kevrekidis.
-\newblock General tooth boundary conditions for equation free modeling.
-\newblock {\em SIAM J. Sci. Comput.}, 29(4):1495--1510, 2007.
-\newblock http://dx.doi.org/10.1137/060654554.
-
-\bibitem{Roberts11}
-A.~J. Roberts, T.~MacKenzie, and J.~E. Bunder.
-\newblock Accurate macroscale modelling of spatial dimensions.
-\newblock Technical report, http://arxiv.org/abs/1103.1187, 2011.
-
-\bibitem{Samaey10}
-G.~Samaey, A.~J. Roberts, and I.~G. Kevrekidis.
-\newblock Equation-free computation: an overview of patch dynamics.
-\newblock In J.~Fish, editor, {\em Bridging the Scales in Science and
-  Engineering}, pages 216--246. New York, Oxford University Press, 2010.
-
-\bibitem{Samaey05}
-G.~Samaey, D.~Roose, and I.~G. Kevrekidis.
-\newblock Combining the gap-tooth scheme with projective integration: Patch
-  dynamics.
-\newblock In B.~Engquist, O.~Runborg, and P.~L{\" o}tstedt, editors, {\em
-  Multiscale Methods in Science and Engineering}, volume~44 of {\em Lecture
-  Notes in Computational Science and Engineering}, pages 225--239. Springer
-  Berlin Heidelberg, 2005.
-\newblock http://dx.doi.org/10.1007/3-540-26444-2\_12.
+\bibitem{Runborg2002}
+Olof Runborg, Constantinos Theodoropoulos, and Ioannis~G Kevrekidis.
+\newblock Effective bifurcation analysis: a time-stepper-based approach.
+\newblock {\em Nonlinearity}, 15(2):491, 2002.
 
 \end{thebibliography}

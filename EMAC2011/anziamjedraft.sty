@@ -1,0 +1,135 @@
+%%
+%% This is file `anziamjedraft.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% anziamje.dtx  (with options: `draft')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from anziamjedraft.sty.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file anziamje.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+\def\myfileversion{3.2c}
+\def\myfiledate{5 Dec 2011}
+\NeedsTeXFormat{LaTeX2e}
+\typeout{ANZIAM J(E) style file, v\myfileversion, \myfiledate, by AJR}
+\typeout{This version is for drafting articles for ANZIAM J(E)}
+\RequirePackage{url}
+\RequirePackage{amsmath}
+\allowdisplaybreaks
+\RequirePackage{graphicx}
+\ifdim\paperwidth=148mm %=a5paper
+    \usepackage[left=5.8mm,right=5.8mm,top=16mm,bottom=6mm]{geometry}
+    \fi
+\AtEndDocument{\authorlist}
+\let\j@@openbib@code\@openbib@code
+\renewcommand{\@openbib@code}{
+  \j@@openbib@code
+  \addcontentsline{toc}{section}{\refname}
+  \raggedright
+  }
+\pagenumbering{arabic}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
+\pagestyle{headings}
+\renewcommand{\MakeUppercase}[1]{\textsf{\headercolour #1}}
+\def\headercolour{}
+\newcounter{j@authors}
+\setcounter{j@authors}{0}
+\renewcommand{\author}[2][]{
+    \stepcounter{j@authors}
+    \expandafter\def\csname j@forename\roman{j@authors}\endcsname{#1}
+    \expandafter\def\csname j@surname\roman{j@authors}\endcsname{#2}
+    \expandafter\def\csname j@addrs\roman{j@authors}\endcsname{}
+    \expandafter\def\csname j@email\roman{j@authors}\endcsname{}
+    \expandafter\def\csname j@auurl\roman{j@authors}\endcsname{}
+    }
+\newcommand{\address}[1]{
+    \expandafter\def\csname j@addrs\roman{j@authors}\endcsname{#1}
+    }
+\newcommand{\email}[1]{
+    \expandafter\def\csname j@email\roman{j@authors}\endcsname{#1}
+    }
+\newcommand{\mailto}[1]{
+    \expandafter\def\csname j@email\roman{j@authors}\endcsname{#1}
+    }
+\newcommand{\http}[1]{
+    \expandafter\def\csname j@auurl\roman{j@authors}\endcsname{#1}
+    }
+\newcounter{j@i}
+\renewcommand{\@author}{ \parbox{\textwidth}{\centering
+    \setcounter{j@i}{0}
+    \loop\ifnum\c@j@i<\c@j@authors
+        \stepcounter{j@i}
+        \ifnum\c@j@i>1\qquad\fi
+        \expandafter\ifx\csname j@forename\roman{j@i}\endcsname\@empty
+        \else\csname j@forename\roman{j@i}\endcsname~\fi%
+        \csname j@surname\roman{j@i}\endcsname
+        ${}^{\ref{j@au:\roman{j@i}}}$
+    \repeat
+    }%endparbox
+    }
+\def\authorlist{\raggedright
+\subsection*{Author address\ifnum\c@j@authors>1 es\fi}
+\begin{enumerate}
+    \setcounter{j@i}{0}
+    \loop\ifnum\c@j@i<\c@j@authors
+        \stepcounter{j@i}
+        \item \label{j@au:\roman{j@i}} \textbf{%
+        \csname j@forename\roman{j@i}\endcsname\
+        \csname j@surname\roman{j@i}\endcsname},
+        \csname j@addrs\roman{j@i}\endcsname
+        \expandafter\ifx\csname j@auurl\roman{j@i}\endcsname\@empty
+        \else\\ \texttt{http:\csname j@auurl\roman{j@i}\endcsname}\fi
+        \expandafter\ifx\csname j@email\roman{j@i}\endcsname\@empty
+        \else\\ \texttt{mailto:\csname j@email\roman{j@i}\endcsname}\fi
+    \repeat
+\label{j@end}
+\end{enumerate}
+}
+\def\keywords#1{\gdef\j@keys{#1}}
+\def\subjclass#1{\gdef\j@subjclass{#1}}
+\newcommand{\j@subjclass}{}
+\newcommand{\j@keys}{}
+\def\theoremcolour{}
+\usepackage{amsthm}
+\topsep=\parskip
+\newtheorem{theorem}{\theoremcolour Theorem}
+\newtheorem{definition}[theorem]{\theoremcolour Definition}
+\newtheorem{corollary}[theorem]{\theoremcolour Corollary}
+\newtheorem{lemma}[theorem]{\theoremcolour Lemma}
+\newtheorem{proposition}[theorem]{\theoremcolour Proposition}
+\newtheorem{claim}[theorem]{\theoremcolour Claim}
+\newtheorem{conjecture}[theorem]{\theoremcolour Conjecture}
+\newtheorem{assumption}[theorem]{\theoremcolour Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{\theoremcolour Remark}
+\newtheorem{example}[theorem]{\theoremcolour Example}
+\renewenvironment{proof}
+{\paragraph{\theoremcolour Proof:}}
+{\hfill\penalty50\quad\mbox{}\hfill\theoremcolour$\spadesuit$\penalty-10000}
+
+\newenvironment{proofof}[1]
+{\paragraph{\theoremcolour Proof of \ref{#1}:}}
+{\hfill\penalty50\quad\mbox{}\hfill\theoremcolour$\spadesuit$\penalty-10000}
+\newcommand{\doi}[1]{\url{http://dx.doi.org/#1}}
+\newcommand{\MR}[1]{\url{http://www.ams.org/mathscinet-getitem?mr=#1}}
+\endinput
+%%
+%% End of file `anziamjedraft.sty'.
